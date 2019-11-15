@@ -1,0 +1,32 @@
+// Fontawesome 5 config
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+// Glyphicons font path
+$icon-font-path: "../fonts/";
+
+$brand-app: #7F0F7E;
+
+// Theme
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1080px
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1260px
+);
+$theme-colors: (
+  primary: #7F0F7E,
+  secondary: #4C5151
+);
+$primary: map-get($map: $theme-colors, $key: "primary");
+$secondary: map-get($map: $theme-colors, $key: "secondary");
+
+// Colors
+$text-color: #4C5151;
+

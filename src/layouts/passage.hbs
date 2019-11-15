@@ -1,0 +1,17 @@
+<div id="passage" class="target"></div>
+<div class="passage">
+    <div class="container">
+        <div class="row">
+            <div class="passage-text-container col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="passage-text">
+                    {{#if index }}
+                    {{> ../content/passage_content }}                    
+                    {{/if}}
+                    {{#if privacy }}
+                    {{> ../content/passage_privacy }}                    
+                    {{/if}}              
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="paragraph">
+    <div class="container">
+        <div class="row">
+            <div class="paragraph-image col-md-4 offset-md-1 show-mobile">
+                <img src="{{#if first }}./assets/images/baloon_a.svg{{/if}}{{#if third }}./assets/images/baloon_c.svg{{/if}}" alt="">
+            </div>
+            <div class="paragraph-text-container col-md-8 {{#if first }} paragraph-a{{/if}}{{#if third }} paragraph-c{{/if}}">
+                <div class="paragraph-text">
+                    {{#if first }}
+                    {{> ../content/paragraph_1_content }}
+                    {{/if}}
+                    {{#if third }}
+                    {{> ../content/paragraph_3_content }}
+                    {{/if}}
+                </div>
+            </div>
+            <div id="{{#if first }}schulbegleitung{{/if}}{{#if third }}pflegeberatung{{/if}}" class="target"></div>
+            <div class="paragraph-image col-md-4 offset-md-1">
+                <img src="{{#if first }}./assets/images/baloon_a.svg{{/if}}{{#if third }}./assets/images/baloon_c.svg{{/if}}"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</div>

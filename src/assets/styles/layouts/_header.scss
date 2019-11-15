@@ -1,0 +1,46 @@
+.header {
+    .hide-desktop {
+        display: block;
+    }
+    .desktop-nav {
+        display: none;
+    }
+
+    .btn-outline-primary.btn-custom {
+        color: $brand-app;
+        &:hover {
+            color: $brand-app;
+            background-color: transparent;
+        }
+        
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .header {
+        .hide-desktop {
+            display: none;
+        }
+        .desktop-nav {
+            display: block;
+        }
+
+        img {
+            width: 220px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        img {
+            width: 150px;
+        }
+    }
+}

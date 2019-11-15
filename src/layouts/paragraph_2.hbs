@@ -1,0 +1,18 @@
+<div id="{{#if second }}familienunterstützende_hilfen{{/if}}{{#if fourth }}hilfen_zur_erziehung{{/if}}" class="target"></div>
+<div class="paragraph">
+    <div class="container">
+        <div class="row">
+            <div class="paragraph-image col-md-4">
+                <img class="hide-mobile" src="{{#if second }}./assets/images/baloon_b.svg{{/if}}{{#if fourth }}./assets/images/baloon_d.svg{{/if}}" alt="">
+            </div>
+            <div class="paragraph-text-container col-md-8{{#if second }} paragraph-b{{/if}}{{#if fourth }} paragraph-d{{/if}}">
+                    {{#if second }}
+                    {{> ../content/paragraph_2_content }}                    
+                    {{/if}}
+                    {{#if fourth }}
+                    {{> ../content/paragraph_4_content }}                    
+                    {{/if}}              
+            </div>
+        </div>
+    </div>
+</div>

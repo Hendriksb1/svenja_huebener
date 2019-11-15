@@ -1,0 +1,139 @@
+.hero {
+    background-image: url("/assets/images/hero.jpg");
+    background-size: cover;
+    height: 300px;
+
+    .hero-main {
+        z-index: 10;
+        margin-left: 10px;
+        
+
+        h1 {
+            margin: 0 auto 0 auto;
+            padding: 10px;
+            line-height: 39px;
+            font-size: 22px;
+
+        }
+
+        h2 {
+            font-size: 14px;
+            padding-left: 10px;
+            line-height: 13px;
+        }
+
+        h1, h2 {
+            color: #7F0F7E;
+        }
+    }
+
+    .background-box-top, .background-box-mid {
+        position: absolute;
+        height: 35px;
+        background-color: white;
+    }
+
+    .background-box-top {
+        width: 300px;
+        top: 180px;
+        z-index: -1;
+    }
+
+    .background-box-mid {
+        width: 150px;
+        top: 218px;
+        z-index: -1;
+    }
+
+    .background-box-bot {
+        position: absolute;
+        height: 30px;
+        width: 270px;
+        background-color: white;
+        top: 257px;
+        z-index: -1;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .hero {
+        height: 500px;
+        background-color: red;
+    
+        .hero-main {
+            z-index: 10;
+            margin-left: 0;
+    
+            h1 {
+                margin: 0 auto;
+                padding: 10px;
+                line-height: 72px;
+                font-size: 40px;
+            }
+    
+            h2 {
+                font-size: 20px;
+                padding-left: 10px;
+                font-size: 20px;
+                line-height: 25px;
+
+            }
+    
+            
+        }
+    
+        .background-box-top, .background-box-mid {
+            position: absolute;
+            height: 65px;
+            background-color: white;
+        }
+    
+        .background-box-top {
+            width: 534.672px;
+            top: 185px;
+            z-index: -1;
+        }
+    
+        .background-box-mid {
+            width: 255px;
+            top: 257px;
+            z-index: -1;
+        }
+    
+        .background-box-bot {
+            position: absolute;
+            height: 30px;
+            width: 375px;
+            background-color: white;
+            top: 330px;
+            z-index: -1;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .hero {
+        height: 500px;
+        background-color: red;
+    
+        .hero-main {
+            z-index: 10;
+            margin-left: 20%;
+    
+            h1 {
+                margin: 0 auto;
+                padding: 10px;
+                line-height: 72px;
+                font-size: 40px;
+            }
+    
+            h2 {
+                font-size: 20px;
+                padding-left: 10px;
+                font-size: 20px;
+            }
+    
+            
+        }
+    }
+}
