@@ -2,149 +2,29 @@
     margin: 0;
 
     .paragraph-image {
-        max-width: 250px;
-        margin: 10px auto;
-    
+        margin: 20px 0;
+        
         img {
+            width: 100%;
             background-size: cover;
         }
-
-        .hide-mobile {
-            display: none;
-        }
-    }
-
-    .show-mobile {
-        display: block;
     }
 
     h2 {
         position: relative;
         margin-bottom: 20px;
         font-size: 20px;
-
-        .line {
-            height: 3px;
-            width: 100px;
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-        }
     }
 
     p {
         font-size: 16px;
     }
+}
 
-    ul {
-        list-style: none;
-    }
-
-    li {
+@include media-breakpoint-up(md) {
+    .paragraph-text-container {
         display: flex;
-
-        &:before {
-            content: "•";
-            margin-right: 20px;
-        }
+        flex-direction: column;
+        justify-content: center;
     }
 }
-
-.paragraph-a {
-
-    h2 {
-        .line {
-            background-color: #2363A6;
-        }
-    }
-
-    li {
-        .line {
-            color: #2363A6;
-        }
-    }
-}
-
-.paragraph-b {
-
-    h2 {
-        .line {
-            background-color: #00827C;
-        }
-    }
-
-    li {
-        .line {
-            color: #00827C;
-        }
-    }
-}
-
-.paragraph-c {
-
-    h2 {
-        .line {
-            background-color: #CC9A00;
-        }
-    }
-
-    li {
-        .line {
-            color: #CC9A00;
-        }
-    }
-}
-
-.paragraph-d {
-
-    h2 {
-        .line {
-            background-color: #750086;
-        }
-    }
-
-    li {
-        .line {
-            color: #750086;
-        }
-    }
-}
-
- @include media-breakpoint-up(sm) {
-
-    .paragraph{
-         margin: 50px 0;
-
-    
-        .paragraph-image {
-    
-            .hide-mobile {
-                // display: block;
-            }
-
-           
-        }
-
-        
-    }
- }
-
-
- @include media-breakpoint-up(md) {
-
-    .paragraph{
-        margin: 70px 0;
-
-    
-        .paragraph-image {
-    
-            .hide-mobile {
-                display: block;
-            }
-        }
-
-        .show-mobile {
-            display: none;
-        }
-    }
- }

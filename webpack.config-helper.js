@@ -25,6 +25,8 @@ for (let i = 0; i < pages.length; i++) {
   );
 }
 
+console.log(pages);
+
 module.exports = (options) => {
   const dest = Path.join(__dirname, 'dist');
 

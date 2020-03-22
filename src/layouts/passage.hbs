@@ -2,13 +2,37 @@
 <div class="passage">
     <div class="container">
         <div class="row">
-            <div class="passage-text-container col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <div class="passage-text-container col-sm-8 offset-sm-2">
                 <div class="passage-text">
-                    {{#if index }}
-                    {{> ../content/passage_content }}                    
+                    {{#if page_1 }}
+                    {{> ../content/page_1/passage_content }}                    
                     {{/if}}
-                    {{#if privacy }}
-                    {{> ../content/passage_privacy }}                    
+                    {{#if page_2 }}
+                        {{#if pos_1 }}
+                            {{> ../content/page_2/passage_pos1 }}                    
+                        {{/if}}
+                        {{#if pos_2 }}
+                            {{> ../content/page_2/passage_pos2 }}                    
+                        {{/if}}                       
+                    {{/if}}
+                    {{#if page_3 }}
+                        {{#if pos_1 }}
+                            {{> ../content/page_3/passage_pos1 }}                    
+                        {{/if}}
+                        {{#if pos_2 }}
+                            {{> ../content/page_3/passage_pos2 }}                    
+                        {{/if}}
+                        {{#if pos_3 }}
+                            {{> ../content/page_3/passage_pos3 }}                    
+                        {{/if}}  
+                        {{#if pos_4 }}
+                            {{> ../content/page_3/passage_pos4 }}                    
+                        {{/if}} 
+                    {{/if}}
+                    {{#if page_4 }}
+                        {{#if pos_1 }}
+                            {{> ../content/page_4/passage_pos1 }}                    
+                        {{/if}}                
                     {{/if}}              
                 </div>
             </div>

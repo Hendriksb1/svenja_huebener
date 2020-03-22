@@ -1,46 +1,12 @@
-<div id="kontakt" class="target"></div>
 <div class="contact">
     <div class="container">
         <div class="row">
-            <div class="contact-cta">
-                {{> ../content/contact_cta_content }}
+            <div class="contact-image col-sm-6">
+                <img src="./assets/images/contact.png" alt="">
             </div>
-            <div class="contact-boxes d-flex flex-column flex-sm-row justify-content-center align-items-center">
-                <div class="contact-box box-1 d-flex flex-column align-items-center justify-content-start">
-                    <div class="contact-box-image">
-                        <img src="./assets/images/martina_burgard-wiggermann.jpg" alt="">
-                    </div>
-                    <div class="contact-box-text">
-                        {{> ../content/1_contact_content }}
-                    </div>
-                </div>
-                <div class="contact-box box-2 d-flex flex-column align-items-center justify-content-start">
-                    <div class="contact-box-image">
-                        <img src="./assets/images/buelent_kocakaya.jpg" alt="">
-                    </div>
-                    <div class="contact-box-text">
-                        {{> ../content/2_contact_content }}
-                    </div>
-                </div>
-                <div class="contact-box box-3 d-flex flex-column align-items-center justify-content-start">
-                    <div class="contact-box-image">
-                        <img src="./assets/images/sabrina_witkowski.jpg" alt="">
-                    </div>
-                    <div class="contact-box-text">
-                        {{> ../content/3_contact_content }}
-                    </div>
-                </div>
-                {{#if extendet }}
-                <div class="contact-box box-4 d-flex flex-column align-items-center justify-content-start">
-                    <div class="contact-box-image">
-                        <img src="./assets/images/sabrina_witkowski.jpg" alt="">
-                    </div>
-                    <div class="contact-box-text">
-                        {{> ../content/4_contact_content }}
-                    </div>
-                </div>
-                {{/if}}
-            </div>
+            <div class="contact-text col-sm-4 ">
+                <div class="">{{> ../content/page_1/contact_content }}</div>
+            </div>   
         </div>
     </div>
 </div>

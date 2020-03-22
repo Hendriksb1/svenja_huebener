@@ -2,18 +2,34 @@ const pages = [
   {
     output: './index.html',
     content: {
-      title: 'Auff Unna',
-      description: 'Auff Unna bietet Ambulante Unterstützung für Familien'
+      title: 'Svenja Huebener - psychotherapie',
+      description: 'xxx'
     },
-    template: './src/pages/home.hbs'
+    template: './src/pages/index.hbs'
   },
   {
-    output: './datenschutzerklaerung.html',
+    output: './supervision.html',
     content: {
-      title: 'Auff Unna - impressum',
-      description: 'Auff Unna bietet Ambulante Unterstützung für Familien'
+      title: 'Svenja Huebener - Supervision',
+      description: 'xxx'
     },
-    template: './src/pages/privacy_policy.hbs'
+    template: './src/pages/supervision.hbs'
+  },
+  {
+    output: './therapie.html',
+    content: {
+      title: 'Svenja Huebener - Therapie',
+      description: 'xxx'
+    },
+    template: './src/pages/therapie.hbs'
+  },
+  {
+    output: './workshops.html',
+    content: {
+      title: 'Svenja Huebener - Workshops',
+      description: 'xxx'
+    },
+    template: './src/pages/workshops.hbs'
   }
 ]
 

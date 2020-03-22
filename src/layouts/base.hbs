@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
   <meta name="description" content="{{ htmlWebpackPlugin.options.description }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="icon" sizes="192x192" href="./assets/images/auff_unna_icon_512px.png">
   <link rel="shortcut icon" href="./assets/images/auff_unna_icon_32px.png">
   <link rel="apple-touch-icon" href="./asserts/images/auff_unna_icon_512px.png">
@@ -19,5 +20,5 @@
 
 </head>
 
-<body {{#if page2 }}class="page2"{{/if}}>
+<body {{#if page_1 }}class="page_1"{{/if}} {{#if page_2 }}class="page_2"{{/if}} {{#if page_3 }}class="page_3"{{/if}} {{#if page_4 }}class="page_4"{{/if}}>
   {{> @partial-block }}

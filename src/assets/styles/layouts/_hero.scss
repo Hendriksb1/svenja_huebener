@@ -1,131 +1,71 @@
-@media screen and (max-width: 320px) {
+.hero {
+    background-size: cover;
+    height: 125px;
+    margin-bottom: 169px;
 
-    .hero {
+    .hero-main {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+        background-color: none;
+        margin-top: 145px;
+        
+        h1 {
+            font-size: 25px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
 
-        .hero-main {
+        h2 {
+            font-size: 20px;
+            margin-left: 15px;
 
-            h1.title {
-                line-height: 34px;
-                font-size: 21px;
-            }
-
-            h2.sub-title {
-                font-size: 12px;
-                line-height: 4px;
-            }
-        }  
+        }
     }
 }
 
-
-.hero {
-    background-image: url("/assets/images/hero.jpg");
-    background-size: cover;
-    height: 300px;
-
-    .row {
-        position: relative;
+.page_1 {
+    .hero {
+        background-image: url("/assets/images/hero_1.jpg");
     }
+}
 
-    .hero-main {
-        margin-left: 10px;
-        margin-top: 70px;
-
-
-        h1 {
-            margin: 0 auto 0 auto;
-            padding: 10px;
-            line-height: 39px;
-            font-size: 24px;
-            font-weight: 600;
-        }
-
-        h2 {
-            font-size: 16px;
-            padding-left: 10px;
-            line-height: 8px;
-            font-weight: 600;
-        }
-
-        h1,
-        h2 {
-            color: #7F0F7E;
-        }
-
-        .title>span,
-        h2>span {
-            position: relative;
-            background-color: #fff;
-            z-index: 1;
-            white-space: pre-wrap;
-
-
-            // &:before {
-            //     content: "";
-            //     position: absolute;
-            //     top: 0;
-            //     right: 100%;
-            //     bottom: 0;
-            //     width: 5px;
-            //     background-color: #fff;
-            // }
-
-        }
-
-        // .hero-title-span2,
-        // h2>span {
-
-        //     &:after {
-        //         content: "";
-        //         position: absolute;
-        //         top: 0;
-        //         left: 100%;
-        //         bottom: 0;
-        //         width: 0.25em;
-        //         background-color: #fff;
-        //     }
-        // }
+.page_2 {
+    .hero {
+        background-image: url("/assets/images/hero_2.jpg");
+        background-position: bottom;
     }
+}
 
-    .hero-contact {
-        position: absolute;
-        margin-top: 10px;
-        font-size: 12px;
-        right: 20px;
-        left: auto;
-
-        a,
-        p {
-            color: #fff;
-            margin-right: 10px;
-            text-decoration: none;
-        }
-
-        p {
-            font-size: 10px;
-        }
-
-        svg {
-            margin-bottom: 3px;
-        }
+.page_3 {
+    .hero {
+        background-image: url("/assets/images/hero_3.jpg");
     }
+}
 
+.page_4 {
+    .hero {
+        background-image: url("/assets/images/hero_4.jpg");
+    }
 }
 
 @include media-breakpoint-up(sm) {
     .hero {
         height: 350px;
-
+        margin-bottom: 70px;
+        
         .hero-main {
+            background-color: rgba($color: #fff, $alpha: 0.9);
             margin-top: 100px;
             z-index: 10;
             margin-left: 0;
+            padding: 10px 12px 8px 12px;
 
             h1 {
                 margin: 0 auto;
                 padding: 10px;
-                line-height: 72px;
-                font-size: 40px;
+                line-height: 1.5;
+                font-size: 30px;
                 // line-height: 39px;
                 // font-size: 1.5rem;
             }
@@ -135,26 +75,9 @@
                 padding-left: 10px;
                 font-size: 20px;
                 line-height: 25px;
+                margin-left: 0px;
 
             }
-
-
-            .title {
-                position: relative;
-                line-height: 65px;
-                // border: 0 solid #333;
-                // border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
-            }
-
-            .hero-title-span1,
-            .hero-title-span2 {
-                padding: 3px;
-            }
-
-            h2>span {
-                padding: 5px;
-            }
-
 
         }
     }
@@ -166,20 +89,14 @@
         background-color: grey;
 
         .hero-main {
-            z-index: 10;
-            margin-left: 20%;
+
 
             h1 {
-                margin: 0 auto;
-                padding: 10px;
-                line-height: 72px;
-                font-size: 40px;
+
             }
 
             h2 {
-                font-size: 20px;
-                padding-left: 10px;
-                font-size: 20px;
+
             }
 
 

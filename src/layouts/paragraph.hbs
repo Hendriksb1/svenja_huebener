@@ -1,0 +1,36 @@
+<div class="paragraph">
+    <div class="container">
+        <div class="row">
+            <div class="paragraph-image col-md-4">
+                {{#if pos_1 }}
+                <img src="./assets/images/hero_2.jpg" alt="">
+                {{/if}}
+                {{#if pos_2 }}
+                <img src="./assets/images/hero_3.jpg" alt="">
+                {{/if}}
+                {{#if pos_3 }}
+                <img src="./assets/images/hero_4.jpg" alt="">
+                {{/if}}
+                {{#if pos_4 }}
+                <img src="./assets/images/paragraph_4.png" alt="">
+                {{/if}}
+            </div>
+            <div class="paragraph-text-container col-md-8">
+                <div class="paragraph-text">
+                    {{#if pos_1 }}
+                    {{> ../content/page_1/paragraph_1_content }}
+                    {{/if}}
+                    {{#if pos_2 }}
+                    {{> ../content/page_1/paragraph_2_content }}
+                    {{/if}}
+                    {{#if pos_3 }}
+                    {{> ../content/page_1/paragraph_3_content }}
+                    {{/if}}
+                    {{#if pos_4 }}
+                    {{> ../content/page_1/paragraph_4_content }}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

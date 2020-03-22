@@ -6,16 +6,6 @@
         font-size: 20px;
         position: relative;
         margin-bottom: 20px;
-
-
-        .line {
-            height: 3px;
-            width: 100px;
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            background-color: $brand-app;
-        }
     
     }
 
@@ -23,7 +13,7 @@
 
 @include media-breakpoint-up(sm) {
     .passage {
-        margin: 70px 0;
+        margin: 50px 0;
     }   
 }
 
