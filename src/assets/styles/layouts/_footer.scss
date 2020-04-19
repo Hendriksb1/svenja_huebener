@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgb(211, 211, 211);
+    background-color: #EFE8DC;
     height: auto;
     width: 100%;
     position: absolute;
@@ -9,3 +9,13 @@
         margin-bottom: 20px;
     }
 }
+
+@include media-breakpoint-up(sm) {
+    .footer {
+        margin-top: 40px;
+        .footer-content {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+} 

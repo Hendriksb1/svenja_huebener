@@ -2,10 +2,10 @@
 <div class="passage">
     <div class="container">
         <div class="row">
-            <div class="passage-text-container col-sm-8 offset-sm-2">
+            <div class="passage-text-container col-sm-10">
                 <div class="passage-text">
                     {{#if page_1 }}
-                    {{> ../content/page_1/passage_content }}                    
+                      {{> ../content/page_1/passage_content }}                    
                     {{/if}}
                     {{#if page_2 }}
                         {{#if pos_1 }}
@@ -33,6 +33,9 @@
                         {{#if pos_1 }}
                             {{> ../content/page_4/passage_pos1 }}                    
                         {{/if}}                
+                    {{/if}}   
+                    {{#if page_5 }}
+                            {{> ../content/page_5/passage_privacy }}                    
                     {{/if}}              
                 </div>
             </div>

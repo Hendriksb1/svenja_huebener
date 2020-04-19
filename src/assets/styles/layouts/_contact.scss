@@ -2,8 +2,7 @@
     margin: 30px 0;
 
     .contact-image {
-        // margin: 20px 0;
-        
+
         img {
             width: 100%;
             background-size: cover;
@@ -12,6 +11,39 @@
 
 }
 
+.contact-stripe {
+    background-color: #EFE8DC;
+
+    .contact-text {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h3 {
+            font-size: 21px;
+        }
+
+        h4 {
+            font-size: 19px;
+        }
+
+        .contact-stripe-info {
+            
+        }
+        
+        .contact-stripe-info, .contact-stripe-cta {
+            margin-top: 20px;
+            h4 {
+                margin-top: 20px;
+            }    
+        }
+
+
+        .down-sm {
+            display: block;
+        }
+    }
+}
 
 @include media-breakpoint-up(sm) {
 
@@ -19,14 +51,36 @@
         margin: 50px 0;
     }
 
+    .contact-stripe {
+
+        .contact-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            .contact-stripe-info {
+                margin-top: 0;
+            }
+
+        .down-sm {
+            display: none;
+        }
+        }
+    }
+
 }
 
 @include media-breakpoint-up(md) {
-    .contact-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // text-align: center;
-        justify-content: center;
+
+    .contact {
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // text-align: center;
+            justify-content: center;
+        }
     }
 }

@@ -30,6 +30,14 @@ const pages = [
       description: 'xxx'
     },
     template: './src/pages/workshops.hbs'
+  },
+  {
+    output: './datenschutzerklaerung.html',
+    content: {
+      title: 'Svenja Huebener - Datenschutzerklaerung',
+      description: 'xxx'
+    },
+    template: './src/pages/datenschutzerklaerung.hbs'
   }
 ]
 

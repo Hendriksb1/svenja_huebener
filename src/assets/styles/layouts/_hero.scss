@@ -27,6 +27,7 @@
 .page_1 {
     .hero {
         background-image: url("/assets/images/hero_1.jpg");
+
     }
 }
 
@@ -34,6 +35,17 @@
     .hero {
         background-image: url("/assets/images/hero_2.jpg");
         background-position: bottom;
+    }
+}
+
+.page_1, .page_2 {
+    .hero {
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 19;
+        }
     }
 }
 
@@ -45,7 +57,8 @@
 
 .page_4 {
     .hero {
-        background-image: url("/assets/images/hero_4.jpg");
+        // background-image: url("/assets/images/hero_4.jpg");
+        background-color: #EFE8DC;
     }
 }
 
@@ -79,6 +92,19 @@
 
             }
 
+        }
+    }
+
+    .page_1, .page_2 {
+        .hero {
+    
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 19;
+            }
         }
     }
 }
