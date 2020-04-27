@@ -6,9 +6,20 @@
         font-size: 20px;
         position: relative;
         margin-bottom: 20px;
-    
     }
 
+    p {
+        font-size: 17px;
+    }
+
+}
+
+.page_5 {
+    .passage {
+        .passage-text {
+            padding: 0.5rem 1rem;
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
@@ -32,7 +43,6 @@
         ul {
             list-style: none;
         }
-    
         
         a {
             word-break: break-all;
@@ -46,7 +56,6 @@
                 margin-right: 20px;
             }
         }
-
 
             .no_flex {
     

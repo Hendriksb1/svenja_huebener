@@ -24,12 +24,12 @@ const pages = [
     template: './src/pages/therapie.hbs'
   },
   {
-    output: './workshops.html',
+    output: './contact.html',
     content: {
-      title: 'Svenja Huebener - Workshops',
+      title: 'Svenja Huebener - Kontakt',
       description: 'xxx'
     },
-    template: './src/pages/workshops.hbs'
+    template: './src/pages/contact.hbs'
   },
   {
     output: './datenschutzerklaerung.html',

@@ -1,7 +1,7 @@
 .hero {
     background-size: cover;
-    height: 125px;
-    margin-bottom: 169px;
+    height: 150px;
+    margin-bottom: 30px;
 
     .hero-main {
         width: 100%;
@@ -24,18 +24,27 @@
     }
 }
 
-.page_1 {
-    .hero {
-        background-image: url("/assets/images/hero_1.jpg");
+.hero-down-sm {
+    display: block;
 
+    h1 {
+        font-size: 21px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h2 {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .hero-content {
+        padding:  0 0 40px 13px;
+        width: 83%;
     }
 }
 
-.page_2 {
-    .hero {
-        background-image: url("/assets/images/hero_2.jpg");
-        background-position: bottom;
-    }
+.hero-up-sm {
+    display: none;
 }
 
 .page_1, .page_2 {
@@ -49,11 +58,66 @@
     }
 }
 
+//********* page 1
+
+.page_1 {
+    .hero {
+        background-image: url("/assets/images/hero_1.jpg");
+    }
+}
+
+//********* page 2
+
+.page_2 {
+    .hero {
+        background-image: url("/assets/images/hero_2.jpg");
+        background-position: bottom;
+
+    }
+}
+
+//********* page 3
+
 .page_3 {
     .hero {
         background-image: url("/assets/images/hero_3.jpg");
+        background-position: 0 -35px;
     }
 }
+
+@media only screen and (min-width: 350px) {
+    .page_3 {
+        .hero {
+            background-position: 0 -80px;
+        }
+    }   
+}
+
+@include media-breakpoint-up(sm) {
+    .page_3 {
+        .hero {
+            background-position: 0 90%;
+        }
+    }
+} 
+
+@include media-breakpoint-up(md) {
+    .page_3 {
+        .hero {
+            background-position: 0 80%;
+        }
+    }
+} 
+
+@include media-breakpoint-up(lg) {
+    .page_3 {
+        .hero {
+            background-position: 0 70%;
+        }
+    }
+} 
+
+//********* page 4
 
 .page_4 {
     .hero {
@@ -95,6 +159,14 @@
         }
     }
 
+    .hero-down-sm {
+        display: none;
+    }
+    
+    .hero-up-sm {
+        display: block;
+    }
+
     .page_1, .page_2 {
         .hero {
     
@@ -114,18 +186,5 @@
         height: 400px;
         background-color: grey;
 
-        .hero-main {
-
-
-            h1 {
-
-            }
-
-            h2 {
-
-            }
-
-
-        }
     }
 }

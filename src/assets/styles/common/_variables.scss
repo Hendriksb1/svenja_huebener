@@ -4,7 +4,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 // Glyphicons font path
 $icon-font-path: "../fonts/";
 
-$brand-app: #7F0F7E;
+$brand-app: #333;
 
 // Theme
 $container-max-widths: (
@@ -21,7 +21,7 @@ $grid-breakpoints: (
   xl: 1260px
 );
 $theme-colors: (
-  primary: #7F0F7E,
+  primary: #333,
   secondary: #4C5151
 );
 $primary: map-get($map: $theme-colors, $key: "primary");
