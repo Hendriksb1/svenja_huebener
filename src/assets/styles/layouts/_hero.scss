@@ -62,7 +62,8 @@
 
 .page_1 {
     .hero {
-        background-image: url("/assets/images/hero_1.jpg");
+        // background-image: url("/assets/images/hero_1.jpg");
+        background-color: #ffdfba;
     }
 }
 
@@ -70,7 +71,8 @@
 
 .page_2 {
     .hero {
-        background-image: url("/assets/images/hero_2.jpg");
+        // background-image: url("/assets/images/hero_2.jpg");
+        background-color: #ffffba;
         background-position: bottom;
 
     }
@@ -80,7 +82,8 @@
 
 .page_3 {
     .hero {
-        background-image: url("/assets/images/hero_3.jpg");
+        // background-image: url("/assets/images/hero_3.jpg");
+        background-color: #bae1ff;
         background-position: 0 -35px;
     }
 }
@@ -132,8 +135,8 @@
         margin-bottom: 70px;
         
         .hero-main {
-            background-color: rgba($color: #fff, $alpha: 0.9);
-            margin-top: 100px;
+            // background-color: rgba($color: #fff, $alpha: 0.9);
+            margin-top: 50px;
             z-index: 10;
             margin-left: 0;
             padding: 10px 12px 8px 12px;
@@ -183,7 +186,7 @@
 
 @include media-breakpoint-up(md) {
     .hero {
-        height: 400px;
+        height: 300px;
         background-color: grey;
 
     }
