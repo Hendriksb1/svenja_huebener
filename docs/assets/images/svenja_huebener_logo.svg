@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="170" viewBox="0 0 258 170">
+  <defs>
+    <clipPath id="clip-logo_svenja_huebener">
+      <rect width="258" height="170"/>
+    </clipPath>
+  </defs>
+  <g id="logo_svenja_huebener" clip-path="url(#clip-logo_svenja_huebener)">
+    <text id="Svenja_Hübener" data-name="Svenja Hübener" transform="translate(1 95)" fill="#333" font-size="27" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="0.11em"><tspan x="0" y="0">Svenja Hübener</tspan></text>
+  </g>
+</svg>

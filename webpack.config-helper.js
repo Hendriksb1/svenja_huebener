@@ -28,7 +28,7 @@ for (let i = 0; i < pages.length; i++) {
 console.log(pages);
 
 module.exports = (options) => {
-  const dest = Path.join(__dirname, 'dist');
+  const dest = Path.join(__dirname, 'docs');
 
   let webpackConfig = {
     devtool: options.devtool,
@@ -106,7 +106,7 @@ module.exports = (options) => {
 
     webpackConfig.plugins.push(
       ExtractSASS,
-      new CleanWebpackPlugin(['dist'], {
+      new CleanWebpackPlugin(['docs'], {
         verbose: true,
         dry: false
       })
