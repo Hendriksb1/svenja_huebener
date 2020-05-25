@@ -19,7 +19,7 @@ function sendEmail(formData, callback) {
       },
       Subject: {
         Charset: 'UTF-8',
-        Data: 'New message from your_site.com',
+        Data: 'New message from svenjahuebener.de',
       },
     },
   };
@@ -37,7 +37,7 @@ module.exports.staticSiteMailer = (event, context, callback) => {
       statusCode: err ? 500 : 200,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'https://your-domain.com',
+        'Access-Control-Allow-Origin': 'https://svenjahuebener.de',
       },
       body: JSON.stringify({
         message: err ? err.message : data,

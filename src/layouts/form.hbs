@@ -1,0 +1,25 @@
+<div class="form-wrapper class row">
+    <div class="container">
+        <form action="https://23fqin3s0d.execute-api.eu-central-1.amazonaws.com/dev" method="POST">
+
+            <div class="form-group col-md-6">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="reply_to" aria-describedby="emailHelp"
+                    placeholder="Ihre E-mail">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" name="name" aria-describedby="namelHelp"
+                    placeholder="Ihr Name">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="message">Nachricht</label>
+                <textarea class="form-control" name="message" id="message"  placeholder="Ihr Nachricht an mich" required</textarea></textarea>
+                <button type="submit" class="btn btn-primary mt-2">Senden</button>
+            </div>
+        </form>
+        <p id="js-form-response"></p>
+    </div>
+</div>
