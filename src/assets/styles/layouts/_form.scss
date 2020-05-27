@@ -1,3 +1,9 @@
 .form-wrapper {
     margin: 30px 0 0 0;
 }
+
+@include media-breakpoint-up(sm) {
+    .form-wrapper {
+        margin: 50px 0;
+    }   
+}
