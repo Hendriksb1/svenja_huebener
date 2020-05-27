@@ -1,193 +1,42 @@
 .hero {
-    background-size: cover;
-    height: 150px;
+    // height: 150px;
     margin-bottom: 30px;
 
-    .hero-main {
-        width: 100%;
-        max-width: 500px;
-        border-radius: 5px;
-        background-color: none;
-        margin-top: 145px;
+        
+        .hero-content {
+            width: 100%;
+            // max-width: 550px;
+            border-radius: 5px;
+            background-color: none;
+            padding: 30px 0;
+            // margin-top: 20px;
+        }
         
         h1 {
             font-size: 25px;
-            margin-left: 15px;
+            // margin-left: 15px;
             margin-bottom: 10px;
+            line-height: 1.4;
+
+            span {
+                color: #CBB147;
+            }
         }
 
         h2 {
-            font-size: 20px;
-            margin-left: 15px;
+            font-size: 12px;
+            // margin-left: 15px;
 
         }
-    }
 }
 
-.hero-down-sm {
-    display: block;
-
-    h1 {
-        font-size: 21px;
-        font-family: 'Open Sans', sans-serif;
+@include media-breakpoint-up(sm) {
+    .hero {
+        // margin-bottom: 70px;
+        font-size: 29px;
     }
-    
+
     h2 {
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: 19;
     }
-    
-    .hero-content {
-        padding:  0 0 40px 13px;
-        width: 83%;
     }
-}
-
-.hero-up-sm {
-    display: none;
-}
-
-.page_1, .page_2 {
-    .hero {
-        h1 {
-            font-size: 20px;
-        }
-        h2 {
-            font-size: 19;
-        }
-    }
-}
-
-//********* page 1
-
-.page_1 {
-    .hero {
-        // background-image: url("/assets/images/hero_1.jpg");
-        background-color: #ffdfba;
-    }
-}
-
-//********* page 2
-
-.page_2 {
-    .hero {
-        // background-image: url("/assets/images/hero_2.jpg");
-        background-color: #ffffba;
-        background-position: bottom;
-
-    }
-}
-
-//********* page 3
-
-.page_3 {
-    .hero {
-        // background-image: url("/assets/images/hero_3.jpg");
-        background-color: #bae1ff;
-        background-position: 0 -35px;
-    }
-}
-
-@media only screen and (min-width: 350px) {
-    .page_3 {
-        .hero {
-            background-position: 0 -80px;
-        }
-    }   
-}
-
-@include media-breakpoint-up(sm) {
-    .page_3 {
-        .hero {
-            background-position: 0 90%;
-        }
-    }
-} 
-
-@include media-breakpoint-up(md) {
-    .page_3 {
-        .hero {
-            background-position: 0 80%;
-        }
-    }
-} 
-
-@include media-breakpoint-up(lg) {
-    .page_3 {
-        .hero {
-            background-position: 0 70%;
-        }
-    }
-} 
-
-//********* page 4
-
-.page_4 {
-    .hero {
-        // background-image: url("/assets/images/hero_4.jpg");
-        background-color: #EFE8DC;
-    }
-}
-
-@include media-breakpoint-up(sm) {
-    .hero {
-        height: 350px;
-        margin-bottom: 70px;
-        
-        .hero-main {
-            // background-color: rgba($color: #fff, $alpha: 0.9);
-            margin-top: 50px;
-            z-index: 10;
-            margin-left: 0;
-            padding: 10px 12px 8px 12px;
-
-            h1 {
-                margin: 0 auto;
-                padding: 10px;
-                line-height: 1.5;
-                font-size: 30px;
-                // line-height: 39px;
-                // font-size: 1.5rem;
-            }
-
-            h2 {
-                font-size: 20px;
-                padding-left: 10px;
-                font-size: 20px;
-                line-height: 25px;
-                margin-left: 0px;
-
-            }
-
-        }
-    }
-
-    .hero-down-sm {
-        display: none;
-    }
-    
-    .hero-up-sm {
-        display: block;
-    }
-
-    .page_1, .page_2 {
-        .hero {
-    
-            h1 {
-                font-size: 22px;
-            }
-
-            h2 {
-                font-size: 19;
-            }
-        }
-    }
-}
-
-@include media-breakpoint-up(md) {
-    .hero {
-        height: 300px;
-        background-color: grey;
-
-    }
-}
