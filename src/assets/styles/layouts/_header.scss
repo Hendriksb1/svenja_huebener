@@ -32,7 +32,7 @@
     // border-bottom: 1px solid #333;
 }
 
-@mixin menu-sytle-sm {
+@mixin menu-sytle-lg {
     color: #333;
     border-bottom: 1px solid #333;
 }
@@ -77,12 +77,12 @@
     }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(lg) {
     .page_1 {
         .navbar-nav {
             li:nth-of-type(1) {
                 a {
-                   @include menu-sytle-sm;
+                   @include menu-sytle-lg;
                 }
             }
         }
@@ -92,7 +92,7 @@
         .navbar-nav {
             li:nth-of-type(2) {
                 a {
-                    @include menu-sytle-sm;
+                    @include menu-sytle-lg;
                 }
             }
         }
@@ -102,7 +102,7 @@
         .navbar-nav {
             li:nth-of-type(3) {
                 a {
-                    @include menu-sytle-sm;
+                    @include menu-sytle-lg;
                 }
             }
         }
@@ -112,7 +112,7 @@
         .navbar-nav {
             li:nth-of-type(4) {
                 a {
-                    @include menu-sytle-sm;
+                    @include menu-sytle-lg;
                 }
             }
         }

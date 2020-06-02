@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="robots" content="noindex"/>
+  <meta name="robots" content="noindex" />
   <title>{{ htmlWebpackPlugin.options.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
   <meta name="description" content="{{ htmlWebpackPlugin.options.description }}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -20,5 +22,6 @@
 
 </head>
 
-<body {{#if page_1 }}class="page_1"{{/if}} {{#if page_2 }}class="page_2"{{/if}} {{#if page_3 }}class="page_3"{{/if}} {{#if page_4 }}class="page_4"{{/if}} {{#if page_5 }}class="page_5"{{/if}}>
+<body {{#if page_1 }}class="page_1" {{/if}} {{#if page_2 }}class="page_2" {{/if}} {{#if page_3 }}class="page_3" {{/if}}
+  {{#if page_4 }}class="page_4" {{/if}} {{#if page_5 }}class="page_5" {{/if}}>
   {{> @partial-block }}
