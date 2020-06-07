@@ -2,13 +2,10 @@ const AWS = require('aws-sdk');
 const SES = new AWS.SES();
 const axios = require('axios')
 const reCapUrl = "https://www.google.com/recaptcha/api/siteverify";
+const reCaptchaSecret = "6LfJzvwUAAAAAHC7x2x9gGkEKOxzT1xsRwDz8Sh0";
 
 function sendEmail(formData, callback) {
-  // Build the SES parameters
 
-  console.table(formData)
-  console.table(formData.recaptcha)
-  
   const emailParams = {
     Source: 'hendrik.schulze.boeing@gmail.com', // SES SENDING EMAIL
     ReplyToAddresses: [formData.reply_to],
@@ -29,51 +26,70 @@ function sendEmail(formData, callback) {
     },
   };
 
-  axios.post(reCapUrl, {
-    secret: reCaptchaSecret,
-    response: formData["g-recaptcha-response"]
-  })
-  .then((res) => {
-    // console.log(`statusCode: ${res.status}`)
-    // console.log(`success: ${res.success}`)
-    console.log(res.data.success);
-    if (res.data.success) {
-      SES.sendEmail(emailParams, callback);
-    } else {
-      console.log("its a robot!")
+  console.log(formData["g-recaptcha-response"]);
+
+  async function wrapperFunc() {
+    try {
+
+      let r1 = await axios({
+        method: 'post',
+        url: reCapUrl,
+        params: {
+          secret: reCaptchaSecret,
+          response: formData["g-recaptcha-response"]
+        }
+      });;
+      // now process r2
+      return r1.data; // this will be the resolved value of the returned promise
+    } catch (e) {
+      console.log(e);
+      throw e; // let caller know the promise was rejected with this reason
     }
+  }
 
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+  wrapperFunc().then(result => {
+    // got final result
+    console.log(result);
+
+    if (result.success) {
+      SES.sendEmail(emailParams, callback); // this sends the mail
+    } else {
+      console.log("robot");
+      callback(null, {
+        "responseCode": 1,
+        "responseDesc": "Failed captcha verification",
+        "googleResponse": result,
+        "formData":formData
+      });
+
+    }
+  }).catch(err => {
+    // got error
+  });
 
 
-  // Send the email
 }
+
+
 
 module.exports.staticSiteMailer = (event, context, callback) => {
   const formData = JSON.parse(event.body);
-  // console.log(formData["g-recaptcha-response"]);
-  
-    // console.log(`statusCode: ${res.status}`)
-    // console.log(`success: ${res.success}`)
 
-      sendEmail(formData, function(err, data) {
-        const response = {
-          statusCode: err ? 500 : 200,
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://svenjahuebener.de',
-          },
-          body: JSON.stringify({
-            message: err ? err.message : data,
-          }),
-        };
+  sendEmail(formData, function (err, data) {
 
-            callback(null, response);
-      });
+    const response = {
+      statusCode: err ? 500 : 200,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'https://svenjahuebener.de',
+        'Access-Control-Allow-Credentials': true,
+      },
+      body: JSON.stringify({
+        message: err ? err.message : data,
+      }),
+    };
+    callback(null, response);
+
+  });
 
 };
-
-

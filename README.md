@@ -43,6 +43,8 @@ yarn sls invoke local --function staticSiteMailer --path data.json
 
 yarn sls deploy -v
 
+reCaptchaSecret needs to abbed in handler.js
+
 ### Features:
 
 * Static-site
