@@ -2,6 +2,15 @@ import $ from "jquery";
 import 'bootstrap';
 import './assets/styles/main.scss';
 
+const success = $('.alert-success');
+const warning = $('.alert-warning');
+
+const showMessage = function(element) {
+  console.log(element);
+  element.css('display', 'block');
+  element.removeClass('hide');
+  element.addClass('show');
+};
 // console.log('app.js loaded');
 
 // $(document).ready(() => {
@@ -56,14 +65,21 @@ $(document).ready(function () {
 
         // Callback function
         xhr.onloadend = response => {
+
+          console.log(response);
+
           if (response.target.status === 200) {
             // The form submission was successful
             form.reset();
             formResponse.innerHTML = 'Thanks for the message. I’ll be in touch shortly.';
+            showMessage(success);
+
           } else {
             // The form submission failed
             formResponse.innerHTML = 'Something went wrong';
             console.error(JSON.parse(response.target.response).message);
+            showMessage(warning);
+
           }
         };
 
