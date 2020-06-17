@@ -11,6 +11,10 @@ const showMessage = function(element) {
   element.addClass('show');
 };
 
+$("body").children().each(function() {
+  document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
+});
+
 //////// recaptcha by google
 
 function ccb(response) {
