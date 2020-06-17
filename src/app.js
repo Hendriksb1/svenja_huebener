@@ -10,12 +10,6 @@ const showMessage = function(element) {
   element.removeClass('hide');
   element.addClass('show');
 };
-// console.log('app.js loaded');
-
-// $(document).ready(() => {
-//   console.log('jquery works!');
-// });
-
 
 //////// recaptcha by google
 
@@ -38,7 +32,6 @@ $(document).ready(function () {
 
     if($('body').is('.page_4')){
 
-      
           const form = document.querySelector('form');
           const formResponse = document.querySelector('#js-form-response');
       
@@ -54,7 +47,7 @@ $(document).ready(function () {
       
             // data.[g-recaptcha-response]
       
-            console.log(data);
+            // console.log(data);
       
               // Construct an HTTP request
               var xhr = new XMLHttpRequest();
@@ -68,7 +61,7 @@ $(document).ready(function () {
               // Callback function
               xhr.onloadend = response => {
       
-                console.log(response);
+                // console.log(response);
       
                 if (response.target.status === 200) {
                   // The form submission was successful

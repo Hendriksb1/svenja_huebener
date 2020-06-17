@@ -2,15 +2,15 @@ const AWS = require('aws-sdk');
 const SES = new AWS.SES();
 const axios = require('axios')
 const reCapUrl = "https://www.google.com/recaptcha/api/siteverify";
-const reCaptchaSecret = "6LfJzvwUAAAAAHC7x2x9gGkEKOxzT1xsRwDz8Sh0";
+// const reCaptchaSecret = "ad reCaptchaSecret here";
 
 function sendEmail(formData, callback) {
 
   const emailParams = {
-    Source: 'hendrik.schulze.boeing@gmail.com', // SES SENDING EMAIL
+    Source: 'info@svenjahuebener.de', // SES SENDING EMAIL
     ReplyToAddresses: [formData.reply_to],
     Destination: {
-      ToAddresses: ['hendrik.schulze.boeing@gmail.com'], // SES RECEIVING EMAIL
+      ToAddresses: ['info@svenjahuebener.de'], // SES RECEIVING EMAIL
     },
     Message: {
       Body: {
