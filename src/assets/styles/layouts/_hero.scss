@@ -34,11 +34,24 @@
     }
 }
 
-.page_1,
-.page_2,
+.page_1 {
+    .hero,
+    .footer {
+        background-color: #FFE7CB;
+    }
+}
+
+.page_2 {
+    .hero,
+    .footer {
+        background-color: #CDEBFF;
+    }
+}
+
 .page_3 {
-    .hero {
-        background-color: #ffdfba;
+    .hero,
+    .footer {
+        background-color: #E1FFE8;
     }
 }
 

@@ -20,12 +20,18 @@
         font-style: normal;
     }
 
+    form {
+        margin: 20px 0;
+    }
 }
 
 
 @include media-breakpoint-up(sm) {
     .form-wrapper {
         // margin: 40px 0;
+        form {
+            margin: 40px 0;
+        }
     }   
 }
 
