@@ -1,11 +1,15 @@
-.paragraph{
+.paragraph,
+.paragraph-rev {
     margin: 0;
 
     .paragraph-image {
         margin: 20px 0;
-        
+
         img {
+            display: block;
             width: 100%;
+            max-width: 270px;
+            margin: 0 auto;
             background-size: cover;
         }
     }
@@ -18,6 +22,14 @@
 
     p {
         font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+    .paragraph,
+    .paragraph-rev {
+        margin: 40px 0;
     }
 }
 
