@@ -34,11 +34,10 @@
     }
 }
 
-.page_1 {
-    .hero,
-    .footer {
+.page_1 .hero,
+.page_1 .footer,
+.page_4 .footer {
         background-color: #dab64d;
-    }
 }
 
 .page_2 {
