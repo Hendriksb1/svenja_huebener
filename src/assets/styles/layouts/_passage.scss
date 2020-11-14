@@ -12,6 +12,24 @@
         font-size: 17px;
     }
 
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            padding-left: 1.25rem;
+            position: relative;
+
+            &:before {
+                content: "\25CF";
+                top: 5px;
+                left: 0;
+                position: absolute;
+                font-size: 10px;
+            }
+        }
+    }
+
 }
 
 .page_5 {

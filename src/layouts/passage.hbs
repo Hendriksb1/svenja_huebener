@@ -4,6 +4,11 @@
             <div class="passage-text-container col-sm-10">
                 <div class="passage-text">
 
+                    {{#if page_1 }}
+                        {{#if pos_1 }}
+                            {{> ../content/page_1/passage_pos1 }}                    
+                        {{/if}}                     
+                    {{/if}}
                     {{#if page_2 }}
                         {{#if pos_1 }}
                             {{> ../content/page_2/passage_pos1 }}                    
